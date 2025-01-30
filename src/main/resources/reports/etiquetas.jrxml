@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="etiquetas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9f9a1a4-b7a1-4e13-b44e-ef2b58d13b90">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="codigoQR" class="java.awt.Image"/>
+	<field name="sector" class="java.lang.String"/>
+	<field name="area" class="java.lang.String"/>
+	<field name="usuarios" class="java.lang.String"/>
+	<field name="marca" class="java.lang.String"/>
+	<field name="modelo" class="java.lang.String"/>
+	<field name="numeroSerie" class="java.lang.String"/>
+	<field name="numeroSigaf" class="java.lang.String"/>
+	<field name="tipo" class="java.lang.String"/>
+	<field name="estado" class="java.lang.String"/>
+	<title>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="0" width="200" height="50" uuid="7863ee23-33c1-4ecf-97bf-b70b3c2c557e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Listado de Etiquetas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="150">
+			<image>
+				<reportElement x="0" y="0" width="100" height="100" uuid="a5143df0-3071-4fc8-8f61-da062795965d"/>
+				<imageExpression><![CDATA[$F{codigoQR}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="110" y="0" width="200" height="20" uuid="04019b5a-4d5c-4cb6-a6f1-ca70e24e2b7d"/>
+				<textFieldExpression><![CDATA[$F{sector}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="20" width="200" height="20" uuid="8224d1f6-3b50-482f-8f91-4c7ba483d1f4"/>
+				<textFieldExpression><![CDATA[$F{area}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="40" width="200" height="20" uuid="66f8b248-9475-4acf-813f-fc98351509c7"/>
+				<textFieldExpression><![CDATA[$F{usuarios}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="60" width="200" height="20" uuid="a3194559-ebfa-4a73-9d11-82f17827091d"/>
+				<textFieldExpression><![CDATA[$F{marca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="80" width="200" height="20" uuid="a3c3d00d-02f7-448e-bb12-9fd9ab3f9e0c"/>
+				<textFieldExpression><![CDATA[$F{modelo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="100" width="200" height="20" uuid="122b7a51-9bd6-4c6c-bee5-062fc93fc8fb"/>
+				<textFieldExpression><![CDATA[$F{numeroSerie}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="200" height="20" uuid="e37dd816-f677-4689-8f82-5dce04757c8c"/>
+				<textFieldExpression><![CDATA[$F{numeroSigaf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="20" width="200" height="20" uuid="de13d2b1-316a-4760-8626-1ce527072cf2"/>
+				<textFieldExpression><![CDATA[$F{tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="40" width="200" height="20" uuid="91d1f181-c0ed-4b89-9318-fbb44fab0903"/>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

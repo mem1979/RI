@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+
+<!DOCTYPE controladores SYSTEM "dtds/controladores.dtd">
+
+<controladores>
+    
+    <!-- Variable de entorno: 
+    <var-entorno nombre="ri_ANYO_DEFECTO" valor="2015"/>
+    -->
+    
+    <!-- Objeto de sesión:
+    <Objeto nombre="ri_anyoActivo" clase="java.lang.Integer" valor="2015" 
+            ambito="global"/>
+    -->
+    
+<controlador nombre="EquiposInformaticos">
+    <hereda-de controlador="Typical"/>
+    <accion nombre="ImprimirEtiquetas" icono="print"
+        clase="com.tprps.ri.Acciones.ImprimirEtiquetasAction">
+    </accion>
+</controlador>
+    
+   
+    
+</controladores>

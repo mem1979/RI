@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+<!DOCTYPE editores SYSTEM "dtds/editores.dtd">
+<editores>
+    <editor nombre="CapitalizarEditor" url="capitalizarEditor.jsp">
+        <formateador clase="com.tprps.ri.formatters.CapitalizaFormateador"/>
+        <para-anotacion anotacion="com.tprps.ri.anotaciones.Capitalizar"/>
+    </editor>
+</editores>
